@@ -1,0 +1,57 @@
+~$ git config --global user.name "Stefan Pulido"
+~$ git config --global user.email "<estefanpulido52@gmail.com>"
+~$ git config --global core.editor "emacs -nw"
+~$ git config --list
+~$ git config --global --edit
+
+
+~$ git clone ssh://john@example.com/path/to/my-project.git
+~$ git add <file>, ~$ git add <directory>
+~$ git add Readme.txt
+~$ git commit -m "First commit. Adding Readme.txt file"
+
+~$ git log # Normal usage
+~$ git log -n <limit>   # Print only the last <limit> commits 
+~$ git log --oneline  # Condense each commit to a single line
+~$ git log --grep="<pattern>"  # search for commits with pattern <pattern> 
+
+Undoing changes:
+
+~$ git checkout <commit> <file> # this affects the repo since it gets the file from the specific commit
+~$ git checkout <commit> 
+~$ git revert <commit>
+
+Git branches:
+$ git branch    # lists all branch in the repository
+$ git branch <branchname>  # creates a branch called <branchname>
+$ git branch -d <branch>   # deletes an specific branch
+$ git branch -m <branch>   # renames the current branch to <branch> 
+
+~$ git remote add origin https://github.com/stefanpulido52/pruebas_programmingnumerical.git
+~$ git push -u origin master
+~$ git pull <remote>
+~$ git push <remote> <branch>
+
+Problems with the proxy:
+$ export http_proxy="http://siausername:siapassword@proxyapp.unal.edu.co:8080/"
+$ export https_proxy="$http_proxy"
+$ export ftp_proxy="$http_proxy"
+$ export RSYNC_PROXY="siausername:siapassword@proxyapp.unal.edu.co:8080"
+
+Ignoring things:
+
+$ nano .gitignore
+$ cat .gitignore
+
+*.dat
+results/
+
+--  
+*.out
+*~
+
+
+
+
+
+
