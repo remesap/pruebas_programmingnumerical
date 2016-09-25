@@ -1,0 +1,1 @@
+g++ -std=c++ p1.cpp -p p1.x 
